@@ -1,57 +1,68 @@
-# Hello rails backend
-
 <a name="readme-top"></a>
 
-# 📗 Table of Contents
+<div align="center">
 
-- [📖 About the Project](#about-project)
-- [Front-End](#frond-end)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-- [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-- [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
-- [🤝 Contributing](#contributing)
-- [⭐️ Show your support](#support)
-- [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
-- [📝 License](#license)
+  <h1><b>Rails with React</b></h1>
+
+</div>
+
+<!-- TABLE OF CONTENTS -->
+
+## 📗 Table of Contents
+
+- [📖 Rails with React ](#-rails-with-react-)
+  - [🛠 Built With ](#-built-with-)
+    - [Tech Stack ](#tech-stack-)
+    - [Key Features ](#key-features-)
+  - [🚀 Link To React App ](#-link-to-react-app-)
+  - [💻 Getting Started ](#-getting-started-)
+    - [Prerequisites](#prerequisites)
+    - [Setup](#setup)
+    - [Install](#install)
+    - [Usage](#usage)
+  - [👥 Author ](#-author-)
+  - [🔭 Future Features ](#-future-features-)
+  - [🤝 Contributing ](#-contributing-)
+  - [⭐️ Show your support ](#️-show-your-support-)
+  - [🙏 Acknowledgments ](#-acknowledgments-)
+  - [📝 License ](#-license-)
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [Hello rails backend] <a name="about-project"></a>
+# 📖 Rails with React <a name="about-project"></a>
 
-**[Hello rails backend]** Is an api that generates random greetings.
-
-## Front-End <a name="frond-end"></a>
-- The api is consumed by this [React project](https://github.com/pushkar1995/hello-react-frontend.git)
-
+**Rails with React** is a fullstack app that have 5 greetings
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Ruby on Rails</summary>
-  <ul>
-    <li><a>https://rubyonrails.org/</a></li>
-  </ul>
-  <summary>Postgres</summary>
-  <ul>
-    <li><a>https://www.postgresql.org/</a></li>
-  </ul>
+  <summary>Client</summary>
+    <li><a href="https://reactjs.org/">React</a></li>
+</details>
+<details>
+  <summary>Server</summary>
+    <li><a href="https://www.ruby-lang.org/en/">Ruby</a></li>
+    <li><a href="https://rubyonrails.org/">Rails</a></li>
+</details>
+<details>
+  <summary>Database</summary>
+    <li><a href="https://www.postgresql.org/">Postgres</a></li>
 </details>
 
 <!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **[Generate random greetings]**
+- **Built using Ruby on Rails with React**
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+
+## 🚀 Link To React App <a name="live-demo"></a>
+
+- [Link to React App PR](https://github.com/Graciano1997/hello-react-front-end/pull/1)
+- [Link to React App feature_hello_react](https://github.com/Graciano1997/hello-react-front-end/tree/feature_hello_react)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -65,62 +76,85 @@ To get a local copy up and running, follow these steps.
 
 In order to run this project you need:
 
-- Install Ruby
-- Install Rails
-- Install Postgresql
+```
+    ruby >= 3.2.0
+    rails >= 7.0
+    postgres >- 15.3
+    node
+```
 
 ### Setup
 
 Clone this repository to your desired folder:
 
+```bash
+  git clone https://github.com/Graciano1997/hello-rails-back-end.git
 ```
-  cd hello-rails-backend
-  git clone https://github.com/pushkar1995/hello-rails-backend.git
+
+You need to setup database for these project
+
+```
+  development = your_dataabase_dev
+  test        = your_datasebase_test
+  production  = your_datasebase_prod
+```
+
+or you can use your own database and change the ```config/database.yml```
+
+```yml
+  default: &default
+    adapter: postgresql
+    encoding: unicode
+    pool: 5
+    username: [your_username]
+    password: [your_password]
+    host: localhost
+
+  development:
+    <<: *default
+    database: [your_database_for_development]
+
+  test:
+    <<: *default
+    database: [your_database_for_test]
+
+  production:
+    <<: *default
+    database: [your_database_for_production]
 ```
 
 ### Install
 
 Install this project with:
 
+```bash
+  cd hello-rails-back-end
+  bundle install
+  npm install
 ```
-  cd hello-rails-backend
-  bundle install && npm install
-```
+
+it will install the required gemfile for running the project
 
 ### Usage
 
-To run the project, execute the following command:
+to use this project:
 
-```
-  yarn build
-```
-
-```
-  rails s
+```bash
+   npm run build
+   bin/rails server
 ```
 
-### Run tests
+it will run the the server on ```localhost:3000```
 
-To run tests, run the following command:
-
-```
-  rubocop --color
-```
-```
-  rspec
-```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-<!-- AUTHORS -->
 
-## 👥 Authors <a name="authors"></a>
+## 👥 Author <a name="author"></a>
 
-👤 Pushkar Gautam
+👤 **GracianoHenrique**
 
-- GitHub: [@pushkar1995](https://github.com/pushkar1995)
-- Twitter: [@Pushkar9951](https://twitter.com/Pushkar9951)
-- LinkedIn: [pushkargautam](https://www.linkedin.com/in/pushkar-gautam-94a385271/)
+- GitHub: [@GracianoHenrique](https://github.com/Graciano1997)
 
 
 
@@ -130,7 +164,8 @@ To run tests, run the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **[Greetings for multiple languages]**
+- **Add UI System**
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -140,7 +175,7 @@ To run tests, run the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/pushkar1995/hello-rails-backend/issues).
+Feel free to check the [issues page](https://github.com/Graciano1997/hello-rails-back-end/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -148,7 +183,7 @@ Feel free to check the [issues page](https://github.com/pushkar1995/hello-rails-
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project please show support by staring ⭐️.
+If you like this project you can share this project to your friend
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -156,7 +191,7 @@ If you like this project please show support by staring ⭐️.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-* I am grateful for microverse for the opprtunity to enroll in their curriculum.
+I would like to thank microverse for this project
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
