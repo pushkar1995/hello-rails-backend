@@ -61,8 +61,8 @@
 
 ## 🚀 Link To React App <a name="live-demo"></a>
 
-- [Link to React App PR](https://github.com/Graciano1997/hello-react-front-end/pull/1)
-- [Link to React App feature_hello_react](https://github.com/Graciano1997/hello-react-front-end/tree/feature_hello_react)
+- [Link to React App PR](https://github.com/pushkar1995/hello-react-frontend/pull/1)
+- [Link to React App project-setup](https://github.com/pushkar1995/hello-react-frontend/tree/project-setupt)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -88,7 +88,7 @@ In order to run this project you need:
 Clone this repository to your desired folder:
 
 ```bash
-  git clone https://github.com/Graciano1997/hello-rails-back-end.git
+  git clone https://github.com/pushkar1995/hello-rails-backend.git
 ```
 
 You need to setup database for these project
@@ -128,7 +128,7 @@ or you can use your own database and change the ```config/database.yml```
 Install this project with:
 
 ```bash
-  cd hello-rails-back-end
+  cd hello-rails-backend
   bundle install
   npm install
 ```
@@ -152,9 +152,11 @@ it will run the the server on ```localhost:3000```
 
 ## 👥 Author <a name="author"></a>
 
-👤 **GracianoHenrique**
+👤 **Pushkar Gautam**
 
-- GitHub: [@GracianoHenrique](https://github.com/Graciano1997)
+- GitHub: [@pushkar1995](https://github.com/pushkar1995)
+- Twitter: [@Pushkar9951](https://twitter.com/Pushkar9951)
+- LinkedIn: [pushkargautam](https://www.linkedin.com/in/pushkar-gautam-94a385271/)
 
 
 
@@ -175,7 +177,7 @@ it will run the the server on ```localhost:3000```
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Graciano1997/hello-rails-back-end/issues).
+Feel free to check the [issues page](https://github.com/pushkar1995/hello-rails-backend/issues).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -199,6 +201,6 @@ I would like to thank microverse for this project
 
 ## 📝 License <a name="license"></a>
 
-This project is [MIT](./LICENSE) licensed.
+This project is [MIT](https://github.com/pushkar1995/hello-rails-backend/blob/dev/LICENSE) licensed.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
